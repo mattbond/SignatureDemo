@@ -8,8 +8,8 @@
 
 #import "NICSignatureView.h"
 
-#define             STROKE_WIDTH_MIN 0.002 // Stroke width determined by touch velocity
-#define             STROKE_WIDTH_MAX 0.010
+#define             STROKE_WIDTH_MIN 0.008 // Stroke width determined by touch velocity
+#define             STROKE_WIDTH_MAX 0.025
 #define       STROKE_WIDTH_SMOOTHING 0.5   // Low pass filter alpha
 
 #define           VELOCITY_CLAMP_MIN 20
