@@ -36,7 +36,7 @@ static const int maxLength = MAXIMUM_VERTECES;
 
 
 // Append vertex to array buffer
-static inline void addVertex(NSUInteger *length, NICSignaturePoint v) {
+static inline void addVertex(uint *length, NICSignaturePoint v) {
     if ((*length) >= maxLength) {
         return;
     }
@@ -98,10 +98,10 @@ static NICSignaturePoint ViewPointToGL(CGPoint viewPoint, CGRect bounds, GLKVect
     
     // Array of verteces, with current length
     NICSignaturePoint SignatureVertexData[maxLength];
-    NSUInteger length;
+    uint length;
     
     NICSignaturePoint SignatureDotsData[maxLength];
-    NSUInteger dotsLength;
+    uint dotsLength;
     
     
     // Width of line at current and previous vertex
